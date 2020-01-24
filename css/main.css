@@ -74,6 +74,10 @@ h3{
     border-left: solid 3px rgb(172, 171, 171);
 }
 
+.item:hover{
+    border-left: solid 3px purple;
+}
+
 .delete{
     border: none;
     padding: 2px 5px;
