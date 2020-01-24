@@ -2,18 +2,18 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Bookoma Book Store</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         <div class="container">
-            <div class="header">
+            <header>
                 <h2>Bookooma</h2>
                 <p>Books for Ninjas</p>
                 <input type="text" id="search" class="search" placeholder="Search books...">
-            </div>
+            </header>
 
             <div class="contents">
                 <h3>Books to Read</h3>
@@ -21,25 +21,39 @@
                 <div class="list">
                     <div class="item">
                         <span class="title">The Wise Man's Fear</span>
-                        <button class="delete">delete</button>
+                        <button class="delete btn-color">delete</button>
                     </div>
 
                     <div class="item">
                         <span class="title">Kafka on the Shore</span>
-                        <button class="delete">delete</button>
+                        <button class="delete btn-color">delete</button>
                     </div>
 
                     <div class="item">
                         <span class="title">The Master and the Margarita</span>
-                        <button class="delete">delete</button>
+                        <button class="delete btn-color">delete</button>
+                    </div>
+
+                    <div class="item">
+                        <span class="title">The Master and the Margarita</span>
+                        <button class="delete btn-color">delete</button>
+                    </div>
+
+                    <div class="item">
+                            <span class="title">Kafka on the Shore</span>
+                            <button class="delete btn-color">delete</button>
                     </div>
                 </div>
-
-                <div class="footer">
-                    <input type="text" class="footer">
-                    <button class="add">Add</button>
-                </div>
             </div>
+
+            <footer>
+                <div class="footer-div ">
+                    <form>
+                        <input type="text" class="footer-input" placeholder="Add a book...">
+                        <div class="add btn-color">Add</div>
+                    </form>
+                </div>
+            </footer>
         </div>
         
         <script src="js/main.js" async defer></script>
