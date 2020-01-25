@@ -1,8 +1,18 @@
-const btn = document.querySelectorAll(".delete");
+const list = document.querySelector(".list");
 
-btn.forEach(function(btn){
-    btn.addEventListener('click',function(e){
+list.addEventListener('click', function(e){
+    console.log(e.target.className);
+    if(e.target.className == "delete"){
         div = e.target.parentElement;
-        div.parentNode.removeChild(div);
-    });
+        list.removeChild(div);
+    }
 });
+
+// const btn = document.querySelectorAll(".delete");
+
+// btn.forEach(function(btn){
+//     btn.addEventListener('click',function(e){
+//         div = e.target.parentElement;
+//         div.parentNode.removeChild(div);
+//     });
+// });

@@ -7,7 +7,7 @@ body{
 * {
     box-sizing: border-box;
 }
-.btn-color{
+button, .btn-color{
     color: white;
     background: purple;
     font-weight: 600
