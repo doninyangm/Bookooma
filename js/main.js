@@ -13,7 +13,6 @@ const addForm = document.forms['add-book'];
 addForm.addEventListener('submit', function(e){
     e.preventDefault();
     const value = addForm.querySelector('input[type="text"]').value;
-    console.log(value);
 
     //create elements
     const item = document.createElement('div');
@@ -36,6 +35,21 @@ addForm.addEventListener('submit', function(e){
 
     //clear values
     addForm.querySelector('input[type="text"]').value = "";
+});
+
+//filter books
+const searchBar = document.forms['search-books'].querySelector('input');
+searchBar.addEventListener('keyup', function(e){
+    const term = e.target.value.toLowerCase();
+    const books = list.querySelectorAll('.item');
+    Array.from(books).forEach(function(book){
+        const title = book.firstElementChild.textContent;
+        if(title.toLowerCase().indexOf(term) != -1){
+            book.style.display = 'block';
+        } else{
+            book.style.display = 'none';
+        }
+    });
 });
 
 // const btn = document.querySelectorAll(".delete");
